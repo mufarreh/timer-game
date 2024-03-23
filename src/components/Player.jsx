@@ -1,16 +1,4 @@
-import { useState, useRef } from "react";
-
-export default function Player({ handleClick }) {
-  const [enteredName, setEnteredName] = useState(null);
-  const playerName = useRef();
-
-  function handleClick() {
-    if (playerName.current.value) {
-      setEnteredName(playerName.current.value);
-      playerName.current.value = null;
-    }
-  }
-
+export default function Player({ handleClick, playerName, enteredName }) {
   return (
     <section id="player">
       <h2>Welcome {enteredName ?? "unknown entity"} </h2>

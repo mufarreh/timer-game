@@ -1,7 +1,9 @@
-export default function ResultModal({ result, targetTime }) {
+export default function ResultModal({ result, targetTime, name }) {
   return (
     <dialog className="result-modal" open>
-      <h2>You {result}</h2>
+      <h2>
+        You {result} {name ?? ""}
+      </h2>
       <p>
         The Target Time was <strong>{targetTime} seconds</strong>
       </p>
