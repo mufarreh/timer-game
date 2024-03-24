@@ -38,5 +38,6 @@ const ResultModal = forwardRef(function ResultModal(
     </dialog>,
     document.getElementById("modal")
   );
+  //merge test
 });
 export default ResultModal;
